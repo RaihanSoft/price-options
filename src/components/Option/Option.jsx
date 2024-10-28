@@ -1,29 +1,34 @@
+/* eslint-disable react/prop-types */
 import PropTypes from "prop-types"
-import Features from "../features/features"
+import FeaturesOption from "../FeaturesOption/FeaturesOption"
 const Option = ({ priceOption }) => {
 
 
     const { name, price, duration, features } = priceOption
 
     return (
-        <div className="bg-blue-500 space-y-4 text-center rounded-md p-4 text-white font-bold">
+        <div className="flex flex-col bg-blue-500 space-y-4 text-center rounded-md p-8 text-white font-bold">
 
             <h2>
                 <span className="text-7xl">{price}</span>
                 <span className="text-xl">/Mon</span>
 
             </h2>
-                <span className="text-xl">/{duration}</span>
+            <span className="text-xl">/{duration}</span>
 
             <h4 className="font-bold text-2xl">{name}</h4>
 
+            <div className="pl-2 flex-grow">
 
-            {
+                {
 
-                features.map((feature, index) => <Features key={index} feature={feature} />)
-            }
+                    features.map((feature, index) => <FeaturesOption key={index} feature={feature} />)
+                }
+
+            </div>
 
 
+            <button className="btn btn-error text-white">Buy Now</button>
         </div>
     )
 }
