@@ -1,0 +1,66 @@
+{
+    "membershipOptions": [
+      {
+        "id": 1,
+        "name": "Basic Membership",
+        "price": 29.99,
+        "duration": "Monthly",
+        "features": [
+          "Access to gym equipment",
+          "Locker room access",
+          "1 group fitness class per week",
+          "Free parking",
+          "Monthly fitness assessment"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Standard Membership",
+        "price": 49.99,
+        "duration": "Monthly",
+        "features": [
+          "Access to gym equipment",
+          "Locker room access",
+          "3 group fitness classes per week",
+          "Free parking",
+          "Monthly fitness assessment",
+          "Access to sauna and steam room",
+          "1 personal training session per month"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Premium Membership",
+        "price": 79.99,
+        "duration": "Monthly",
+        "features": [
+          "Unlimited access to gym equipment",
+          "Locker room access with towel service",
+          "Unlimited group fitness classes",
+          "Free parking",
+          "Weekly fitness assessment",
+          "Access to sauna, steam room, and pool",
+          "3 personal training sessions per month",
+          "Nutritional guidance and meal planning"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "VIP Membership",
+        "price": 119.99,
+        "duration": "Monthly",
+        "features": [
+          "24/7 access to gym facilities",
+          "Private locker room access",
+          "Unlimited group fitness classes",
+          "Reserved parking spot",
+          "Weekly fitness assessments with a trainer",
+          "Access to sauna, steam room, and pool",
+          "Unlimited personal training sessions",
+          "Custom nutrition plan and weekly check-ins",
+          "Exclusive access to special events and workshops"
+        ]
+      }
+    ]
+  }
+  
