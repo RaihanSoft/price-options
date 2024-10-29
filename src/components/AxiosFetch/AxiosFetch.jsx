@@ -1,9 +1,11 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { PacmanLoader, SyncLoader } from "react-spinners"
 import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts"
 
 const AxiosFetch = () => {
     const [load, setLoad] = useState([])
+    const [spin, setspin] = useState(true)
 
 
     useEffect(() => {
@@ -26,6 +28,7 @@ const AxiosFetch = () => {
 
                 })
                 setLoad(fakeData)
+                setspin(false)
 
 
 
@@ -34,14 +37,19 @@ const AxiosFetch = () => {
             })
 
     }, [])
-    console.log(load)
+
 
     return (
         <div>
+
+            { spin && <PacmanLoader
+                color="red"
+
+            />}
             <h3>length : {load.length}</h3>
 
             <BarChart width={1200} height={400} data={load} >
-                
+
                 <Bar dataKey="price" fill="#8884d8" />
                 <XAxis dataKey={"name"} />
                 <YAxis dataKey={"price"} />
